@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Sonatina.mp3-b5df2d881dcad6f12773c684e275e719.mp3str"
+
+[deps]
+
+source_file="res://audi/Sonatina.mp3"
+dest_files=[ "res://.import/Sonatina.mp3-b5df2d881dcad6f12773c684e275e719.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

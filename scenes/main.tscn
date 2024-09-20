@@ -1,0 +1,1440 @@
+[gd_scene load_steps=91 format=2]
+
+[ext_resource path="res://imgs/kish_backround.jpg" type="Texture" id=1]
+[ext_resource path="res://scripts/main.gd" type="Script" id=2]
+[ext_resource path="res://imgs/menu.png" type="Texture" id=3]
+[ext_resource path="res://fronts/def_front.tres" type="Theme" id=4]
+[ext_resource path="res://scripts/episod1.gd" type="Script" id=5]
+[ext_resource path="res://audi/smeh.wav" type="AudioStream" id=6]
+[ext_resource path="res://imgs/menu_back.png" type="Texture" id=7]
+[ext_resource path="res://imgs/zvuk2.png" type="Texture" id=9]
+[ext_resource path="res://imgs/zamok.png" type="Texture" id=10]
+[ext_resource path="res://imgs/kolpak.png" type="Texture" id=11]
+[ext_resource path="res://imgs/shut.png" type="Texture" id=12]
+[ext_resource path="res://imgs/zvuk2_off.png" type="Texture" id=13]
+[ext_resource path="res://scripts/zamok_pesnya.gd" type="Script" id=14]
+[ext_resource path="res://imgs/zamok_off.png" type="Texture" id=15]
+[ext_resource path="res://scripts/zamok_hronika.gd" type="Script" id=16]
+[ext_resource path="res://scripts/shut_go.gd" type="Script" id=17]
+[ext_resource path="res://fronts/ofont.ru_Izhitsa.ttf" type="DynamicFontData" id=18]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( -5.4809, 178.579, 771.879, 422.225 )
+margin_left = 866.825
+margin_right = 766.307
+margin_top = 426.838
+margin_bottom = 434.737
+
+[sub_resource type="Theme" id=10]
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 515, 755 )
+
+[sub_resource type="DynamicFont" id=31]
+size = 34
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 18 )
+
+[sub_resource type="Theme" id=3]
+default_font = SubResource( 31 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "hide_menu"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../menu_panel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=73]
+resource_name = "hide_menu"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../menu_panel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=74]
+resource_name = "hide_menu"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../menu_panel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "start_an"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../menu_panel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "zzamok_p"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("zamok_pesnya:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("zamok_pesnya:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("pesnya:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=32]
+resource_name = "zzamok_h"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("zamok_hronika:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("zamok_hronika:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.1, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("hronika:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 585, 690 )
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 11 )
+region_rect = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="StyleBoxTexture" id=14]
+texture = ExtResource( 11 )
+region_rect = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="StyleBoxTexture" id=16]
+texture = ExtResource( 11 )
+region_rect = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 11 )
+region_rect = Rect2( 0, 0, 180, 180 )
+
+[sub_resource type="DynamicFont" id=76]
+size = 36
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 18 )
+
+[sub_resource type="Theme" id=13]
+default_font = SubResource( 76 )
+
+[sub_resource type="Animation" id=22]
+resource_name = "min_10"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("much_min:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0.552941, 0.0470588, 0.0470588, 1 ), Color( 0, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=75]
+resource_name = "min_10"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("much_max:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.172549, 0.533333, 0.0431373, 0 ), Color( 0.172549, 0.533333, 0.0431373, 1 ), Color( 0.172549, 0.533333, 0.0431373, 0 ) ]
+}
+
+[sub_resource type="StyleBoxTexture" id=17]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 585, 690 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 18 )
+
+[sub_resource type="Theme" id=24]
+default_font = SubResource( 23 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 20
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 18 )
+
+[sub_resource type="Theme" id=26]
+default_font = SubResource( 25 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 15
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 18 )
+
+[sub_resource type="Theme" id=19]
+default_font = SubResource( 18 )
+
+[sub_resource type="Animation" id=27]
+resource_name = "block_test"
+tracks/0/type = "value"
+tracks/0/path = NodePath("menu/zamok_pesnya:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 169, 33 ), Vector2( 173, 38 ), Vector2( 169, 33 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_name = "block_test2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("menu/zamok_hronika:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 186, 33 ), Vector2( 190, 37 ), Vector2( 186, 33 ) ]
+}
+
+[sub_resource type="Animation" id=29]
+resource_name = "block_test"
+tracks/0/type = "value"
+tracks/0/path = NodePath("menu/zamok_pesnya:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 169, 33 ), Vector2( 173, 38 ), Vector2( 169, 33 ) ]
+}
+
+[sub_resource type="Animation" id=30]
+resource_name = "block_test2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("menu/zamok_hronika:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 186, 33 ), Vector2( 190, 37 ), Vector2( 186, 33 ) ]
+}
+
+[sub_resource type="StyleBoxTexture" id=36]
+texture = ExtResource( 12 )
+region_rect = Rect2( 0, 0, 130, 135 )
+
+[sub_resource type="StyleBoxTexture" id=35]
+texture = ExtResource( 12 )
+region_rect = Rect2( 0, 0, 130, 135 )
+
+[sub_resource type="StyleBoxTexture" id=34]
+texture = ExtResource( 12 )
+region_rect = Rect2( 0, 0, 130, 135 )
+
+[sub_resource type="Animation" id=38]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -45, 1.90735e-06 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("episod1/workstate/shut_icon:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 66, 56 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_name = "shut_1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 1.90735e-06 ), Vector2( -5, 0 ), Vector2( -5, 0 ), Vector2( -45, 1.90735e-06 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "shut_2"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 40 ), Vector2( -5, 40 ), Vector2( -5, 40 ), Vector2( -45, 40 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_name = "shut_3"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 80 ), Vector2( -5, 80 ), Vector2( -5, 80 ), Vector2( -45, 80 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "shut_4"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 120 ), Vector2( -5, 120 ), Vector2( -5, 120 ), Vector2( -45, 120 ) ]
+}
+
+[sub_resource type="Animation" id=42]
+resource_name = "shut_5"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 160 ), Vector2( -5, 160 ), Vector2( -5, 160 ), Vector2( -45, 160 ) ]
+}
+
+[sub_resource type="Animation" id=43]
+resource_name = "shut_6"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 200 ), Vector2( -5, 200 ), Vector2( -5, 200 ), Vector2( -45, 200 ) ]
+}
+
+[sub_resource type="Animation" id=44]
+resource_name = "shut_7"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 240 ), Vector2( -5, 240 ), Vector2( -5, 240 ), Vector2( -45, 240 ) ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_name = "shut_8"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1.02837 ),
+"update": 0,
+"values": [ Vector2( -45, 280 ), Vector2( -5, 280 ), Vector2( -5, 280 ), Vector2( -45, 280 ) ]
+}
+
+[sub_resource type="Animation" id=46]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -45, 1.90735e-06 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("episod1/workstate/shut_icon:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 66, 56 ) ]
+}
+
+[sub_resource type="Animation" id=47]
+resource_name = "shut_1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 360 ), Vector2( 0, 330 ), Vector2( 0, 330 ), Vector2( 0, 360 ) ]
+}
+
+[sub_resource type="Animation" id=48]
+resource_name = "shut_2"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 70, 360 ), Vector2( 70, 330 ), Vector2( 70, 330 ), Vector2( 70, 360 ) ]
+}
+
+[sub_resource type="Animation" id=49]
+resource_name = "shut_3"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 140, 360 ), Vector2( 140, 330 ), Vector2( 140, 330 ), Vector2( 140, 360 ) ]
+}
+
+[sub_resource type="Animation" id=50]
+resource_name = "shut_4"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 210, 360 ), Vector2( 210, 330 ), Vector2( 210, 330 ), Vector2( 210, 360 ) ]
+}
+
+[sub_resource type="Animation" id=51]
+resource_name = "shut_5"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 280, 360 ), Vector2( 280, 330 ), Vector2( 280, 330 ), Vector2( 280, 360 ) ]
+}
+
+[sub_resource type="Animation" id=52]
+resource_name = "shut_6"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 370, 360 ), Vector2( 370, 330 ), Vector2( 370, 330 ), Vector2( 370, 360 ) ]
+}
+
+[sub_resource type="Animation" id=53]
+resource_name = "shut_7"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 450, 360 ), Vector2( 450, 330 ), Vector2( 450, 330 ), Vector2( 450, 360 ) ]
+}
+
+[sub_resource type="Animation" id=54]
+resource_name = "shut_8"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon2:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 550, 360 ), Vector2( 550, 330 ), Vector2( 550, 330 ), Vector2( 550, 360 ) ]
+}
+
+[sub_resource type="Animation" id=55]
+length = 0.001
+
+[sub_resource type="Animation" id=56]
+resource_name = "shut_1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 345 ), Vector2( 595, 345 ), Vector2( 595, 345 ), Vector2( 640, 345 ) ]
+}
+
+[sub_resource type="Animation" id=57]
+resource_name = "shut_2"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 305 ), Vector2( 595, 305 ), Vector2( 595, 305 ), Vector2( 640, 305 ) ]
+}
+
+[sub_resource type="Animation" id=58]
+resource_name = "shut_3"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 260 ), Vector2( 595, 260 ), Vector2( 595, 260 ), Vector2( 640, 260 ) ]
+}
+
+[sub_resource type="Animation" id=59]
+resource_name = "shut_4"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 220 ), Vector2( 595, 220 ), Vector2( 595, 220 ), Vector2( 640, 220 ) ]
+}
+
+[sub_resource type="Animation" id=60]
+resource_name = "shut_5"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 180 ), Vector2( 595, 180 ), Vector2( 595, 180 ), Vector2( 640, 180 ) ]
+}
+
+[sub_resource type="Animation" id=61]
+resource_name = "shut_6"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 140 ), Vector2( 595, 140 ), Vector2( 595, 140 ), Vector2( 640, 140 ) ]
+}
+
+[sub_resource type="Animation" id=62]
+resource_name = "shut_7"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 100 ), Vector2( 595, 100 ), Vector2( 595, 100 ), Vector2( 640, 100 ) ]
+}
+
+[sub_resource type="Animation" id=63]
+resource_name = "shut_8"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon3:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 60 ), Vector2( 595, 60 ), Vector2( 595, 60 ), Vector2( 640, 60 ) ]
+}
+
+[sub_resource type="Animation" id=64]
+length = 0.001
+
+[sub_resource type="Animation" id=65]
+resource_name = "shut_1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 640, 0 ), Vector2( 640, 25 ), Vector2( 640, 25 ), Vector2( 640, 0 ) ]
+}
+
+[sub_resource type="Animation" id=66]
+resource_name = "shut_2"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 560, 0 ), Vector2( 560, 25 ), Vector2( 560, 25 ), Vector2( 560, 0 ) ]
+}
+
+[sub_resource type="Animation" id=67]
+resource_name = "shut_3"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 480, 0 ), Vector2( 480, 25 ), Vector2( 480, 25 ), Vector2( 480, 0 ) ]
+}
+
+[sub_resource type="Animation" id=68]
+resource_name = "shut_4"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 400, 0 ), Vector2( 400, 25 ), Vector2( 400, 25 ), Vector2( 400, 0 ) ]
+}
+
+[sub_resource type="Animation" id=69]
+resource_name = "shut_5"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 320, 0 ), Vector2( 320, 25 ), Vector2( 320, 25 ), Vector2( 320, 0 ) ]
+}
+
+[sub_resource type="Animation" id=70]
+resource_name = "shut_6"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 240, 0 ), Vector2( 240, 25 ), Vector2( 240, 25 ), Vector2( 240, 0 ) ]
+}
+
+[sub_resource type="Animation" id=71]
+resource_name = "shut_7"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 160, 0 ), Vector2( 160, 25 ), Vector2( 160, 25 ), Vector2( 160, 0 ) ]
+}
+
+[sub_resource type="Animation" id=72]
+resource_name = "shut_8"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("episod1/workstate/shut_icon4:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 50, 0 ), Vector2( 50, 25 ), Vector2( 50, 25 ), Vector2( 50, 0 ) ]
+}
+
+[node name="main" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="episod1" type="Control" parent="."]
+margin_right = 640.0
+margin_bottom = 360.0
+theme = ExtResource( 4 )
+script = ExtResource( 5 )
+
+[node name="workstate" type="Panel" parent="episod1"]
+unique_name_in_owner = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="menu" type="Panel" parent="episod1/workstate"]
+unique_name_in_owner = true
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.328
+anchor_top = 0.042
+anchor_right = 0.672
+anchor_bottom = 0.958
+margin_left = -0.920013
+margin_top = -0.120001
+margin_right = -1.08002
+margin_bottom = 0.119965
+rect_min_size = Vector2( 200, 300 )
+rect_pivot_offset = Vector2( -111, 204 )
+theme = SubResource( 10 )
+custom_styles/panel = SubResource( 2 )
+
+[node name="pesnya" type="Button" parent="episod1/workstate/menu"]
+unique_name_in_owner = true
+modulate = Color( 0.815686, 0, 0, 1 )
+anchor_left = 0.086
+anchor_top = 0.245
+anchor_right = 0.914
+anchor_bottom = 0.391
+margin_left = 0.0800018
+margin_top = -2.85
+margin_right = -0.0799713
+margin_bottom = -3.03001
+theme = SubResource( 3 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+disabled = true
+text = "МУЗЫКА"
+flat = true
+
+[node name="skazka" type="Button" parent="episod1/workstate/menu"]
+unique_name_in_owner = true
+modulate = Color( 0.815686, 0, 0, 1 )
+anchor_left = 0.114
+anchor_top = 0.382
+anchor_right = 0.891
+anchor_bottom = 0.518
+margin_left = -0.0800018
+margin_top = -0.0600128
+margin_right = -0.0200043
+margin_bottom = 0.0599976
+theme = SubResource( 3 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "СКАЗКА"
+flat = true
+icon_align = 1
+
+[node name="hronika" type="Button" parent="episod1/workstate/menu"]
+unique_name_in_owner = true
+modulate = Color( 0.815686, 0, 0, 1 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = 6.50002
+margin_right = 100.0
+margin_bottom = 51.5
+theme = SubResource( 3 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+disabled = true
+text = "ХРОНИКА"
+flat = true
+
+[node name="scene_skazka" type="AnimationPlayer" parent="episod1/workstate/menu"]
+anims/hide_menu = SubResource( 4 )
+
+[node name="scene_pesnya" type="AnimationPlayer" parent="episod1/workstate/menu"]
+anims/hide_menu = SubResource( 73 )
+
+[node name="scene_hronika" type="AnimationPlayer" parent="episod1/workstate/menu"]
+anims/hide_menu = SubResource( 74 )
+
+[node name="start_anima" type="AnimationPlayer" parent="episod1/workstate/menu"]
+unique_name_in_owner = true
+anims/start_an = SubResource( 5 )
+
+[node name="zamok_pesnya" type="TextureButton" parent="episod1/workstate/menu"]
+anchor_left = 0.805
+anchor_top = 0.221
+anchor_right = 0.914
+anchor_bottom = 0.297
+margin_left = -152.1
+margin_top = 11.07
+margin_right = -7.08
+margin_bottom = 18.99
+rect_min_size = Vector2( 25, 25 )
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 15 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 14 )
+
+[node name="zamok_hronika" type="TextureButton" parent="episod1/workstate/menu"]
+anchor_left = 0.077
+anchor_top = 0.536
+anchor_right = 0.914
+anchor_bottom = 0.633
+margin_left = 0.0600014
+margin_top = 0.12001
+margin_right = 1.92001
+margin_bottom = 1.11002
+rect_min_size = Vector2( 25, 25 )
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 15 )
+expand = true
+stretch_mode = 5
+script = ExtResource( 16 )
+
+[node name="zamok_p_off" type="AnimationPlayer" parent="episod1/workstate/menu"]
+anims/zzamok_p = SubResource( 20 )
+
+[node name="zamok_h_off" type="AnimationPlayer" parent="episod1/workstate/menu"]
+anims/zzamok_h = SubResource( 32 )
+
+[node name="menu_panel" type="Panel" parent="episod1/workstate"]
+unique_name_in_owner = true
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -110.0
+margin_right = 106.0
+margin_bottom = 64.0
+custom_styles/panel = SubResource( 6 )
+
+[node name="zvuk" type="Button" parent="episod1/workstate/menu_panel"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -60.0
+margin_top = -20.0
+margin_right = -20.0
+margin_bottom = 20.0
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+toggle_mode = true
+
+[node name="shut" type="Button" parent="episod1/workstate/menu_panel"]
+anchor_left = 0.093
+anchor_top = 0.187
+anchor_right = 0.278
+anchor_bottom = 0.812
+margin_left = -0.0880013
+margin_top = 0.0319996
+margin_right = -0.0480042
+margin_bottom = 0.0319977
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/focus = SubResource( 16 )
+custom_styles/normal = SubResource( 11 )
+
+[node name="much" type="Label" parent="episod1/workstate/menu_panel"]
+unique_name_in_owner = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -18.5
+margin_top = -14.0
+margin_right = 18.5
+margin_bottom = 14.0
+theme = SubResource( 13 )
+text = "0"
+
+[node name="much_min" type="Label" parent="episod1/workstate/menu_panel"]
+unique_name_in_owner = true
+modulate = Color( 0, 0, 0, 0 )
+anchor_left = 0.414
+anchor_top = 0.75
+anchor_right = 0.641
+anchor_bottom = 1.187
+margin_left = 0.0759888
+margin_right = 0.0439911
+margin_bottom = 0.0319977
+theme = SubResource( 13 )
+text = "-10"
+
+[node name="much_max" type="Label" parent="episod1/workstate/menu_panel"]
+unique_name_in_owner = true
+modulate = Color( 0.172549, 0.533333, 0.0431373, 0 )
+anchor_left = 0.414
+anchor_top = 0.75
+anchor_right = 0.641
+anchor_bottom = 1.187
+margin_left = 0.0759888
+margin_right = 0.0439911
+margin_bottom = 0.0319977
+theme = SubResource( 13 )
+text = "+1"
+
+[node name="much_min_anim" type="AnimationPlayer" parent="episod1/workstate/menu_panel"]
+unique_name_in_owner = true
+anims/min_10 = SubResource( 22 )
+
+[node name="much_max_anim2" type="AnimationPlayer" parent="episod1/workstate/menu_panel"]
+unique_name_in_owner = true
+anims/min_10 = SubResource( 75 )
+
+[node name="popup_blok" type="Panel" parent="episod1/workstate"]
+unique_name_in_owner = true
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -214.0
+margin_top = -104.0
+margin_bottom = 89.0
+custom_styles/panel = SubResource( 17 )
+
+[node name="add_coin_rek" type="Button" parent="episod1/workstate/popup_blok"]
+modulate = Color( 0.717647, 0, 0, 1 )
+anchor_top = 0.679
+anchor_right = 1.0
+anchor_bottom = 0.896
+margin_top = 9.953
+margin_bottom = 1.07199
+theme = SubResource( 24 )
+text = "Реклама"
+flat = true
+
+[node name="add_coin_sho" type="Button" parent="episod1/workstate/popup_blok"]
+modulate = Color( 0.717647, 0, 0, 1 )
+anchor_top = 0.679
+anchor_right = 1.0
+anchor_bottom = 0.896
+margin_top = -23.047
+margin_bottom = -31.928
+theme = SubResource( 26 )
+text = "Позвать друга"
+flat = true
+
+[node name="blok" type="Label" parent="episod1/workstate/popup_blok"]
+modulate = Color( 0.815686, 0, 0, 1 )
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -87.0
+margin_top = 7.0
+margin_right = 87.0
+margin_bottom = 26.0
+theme = SubResource( 19 )
+text = "ЗАБЛОКИРОВАНО"
+align = 1
+
+[node name="zachto2" type="Label" parent="episod1/workstate/popup_blok"]
+margin_left = 10.0
+margin_top = 37.0
+margin_right = 200.0
+margin_bottom = 111.0
+theme = SubResource( 19 )
+text = "Для того чтобы открыть
+раздел, необходимо 10 
+очков. Можно получить 
+дополнительные 5 очков за:"
+align = 1
+
+[node name="popup_blok2" type="Panel" parent="episod1/workstate"]
+unique_name_in_owner = true
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -640.0
+margin_top = -104.0
+margin_right = -426.0
+margin_bottom = 89.0
+custom_styles/panel = SubResource( 17 )
+
+[node name="blok" type="Label" parent="episod1/workstate/popup_blok2"]
+modulate = Color( 0.815686, 0, 0, 1 )
+anchor_left = 0.175
+anchor_top = 0.036
+anchor_right = 0.825
+anchor_bottom = 0.135
+margin_left = 0.0499992
+margin_top = 1.052
+margin_right = -0.0500031
+margin_bottom = 0.945
+theme = SubResource( 19 )
+text = "КАК ИГРАТЬ?"
+align = 1
+
+[node name="zachto2" type="Label" parent="episod1/workstate/popup_blok2"]
+margin_left = 10.0
+margin_top = 37.0
+margin_right = 201.0
+margin_bottom = 110.0
+theme = SubResource( 19 )
+text = "Получайте очки  и 
+открывайте новые разделы 
+игры. Можно получить 
+дополнительные 5 очков за:"
+align = 1
+
+[node name="add_coin_rek2" type="Button" parent="episod1/workstate/popup_blok2"]
+modulate = Color( 0.717647, 0, 0, 1 )
+anchor_top = 0.679
+anchor_right = 1.0
+anchor_bottom = 0.896
+margin_top = 9.953
+margin_bottom = 1.07199
+theme = SubResource( 24 )
+text = "Реклама"
+flat = true
+
+[node name="add_coin_sho2" type="Button" parent="episod1/workstate/popup_blok2"]
+unique_name_in_owner = true
+modulate = Color( 0.717647, 0, 0, 1 )
+anchor_top = 0.679
+anchor_right = 1.0
+anchor_bottom = 0.896
+margin_top = -23.047
+margin_bottom = -31.928
+theme = SubResource( 26 )
+text = "Позвать друга"
+flat = true
+
+[node name="zamok_blok_test" type="AnimationPlayer" parent="episod1/workstate"]
+anims/block_test = SubResource( 27 )
+anims/block_test2 = SubResource( 28 )
+
+[node name="zamok_blok_test2" type="AnimationPlayer" parent="episod1/workstate"]
+anims/block_test = SubResource( 29 )
+anims/block_test2 = SubResource( 30 )
+
+[node name="shut_icon" type="Button" parent="episod1/workstate"]
+unique_name_in_owner = true
+margin_left = -45.0
+margin_right = 21.0
+margin_bottom = 56.0
+rect_rotation = -317.1
+custom_styles/hover = SubResource( 36 )
+custom_styles/pressed = SubResource( 35 )
+custom_styles/normal = SubResource( 34 )
+
+[node name="shut_icon2" type="Button" parent="episod1/workstate"]
+unique_name_in_owner = true
+margin_top = 360.0
+margin_right = 66.0
+margin_bottom = 416.0
+rect_rotation = -360.0
+rect_pivot_offset = Vector2( 1233, -372 )
+custom_styles/hover = SubResource( 36 )
+custom_styles/pressed = SubResource( 35 )
+custom_styles/normal = SubResource( 34 )
+
+[node name="shut_icon3" type="Button" parent="episod1/workstate"]
+unique_name_in_owner = true
+margin_left = 640.0
+margin_top = 60.0
+margin_right = 706.0
+margin_bottom = 116.0
+rect_rotation = -49.5
+custom_styles/hover = SubResource( 36 )
+custom_styles/pressed = SubResource( 35 )
+custom_styles/normal = SubResource( 34 )
+
+[node name="shut_icon4" type="Button" parent="episod1/workstate"]
+unique_name_in_owner = true
+margin_left = 160.0
+margin_right = 226.0
+margin_bottom = 56.0
+rect_rotation = -180.0
+custom_styles/hover = SubResource( 36 )
+custom_styles/pressed = SubResource( 35 )
+custom_styles/normal = SubResource( 34 )
+
+[node name="shut_go1" type="AnimationPlayer" parent="episod1"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 38 )
+anims/shut_1 = SubResource( 37 )
+anims/shut_2 = SubResource( 39 )
+anims/shut_3 = SubResource( 40 )
+anims/shut_4 = SubResource( 41 )
+anims/shut_5 = SubResource( 42 )
+anims/shut_6 = SubResource( 43 )
+anims/shut_7 = SubResource( 44 )
+anims/shut_8 = SubResource( 45 )
+script = ExtResource( 17 )
+
+[node name="shut_go2" type="AnimationPlayer" parent="episod1"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 46 )
+anims/shut_1 = SubResource( 47 )
+anims/shut_2 = SubResource( 48 )
+anims/shut_3 = SubResource( 49 )
+anims/shut_4 = SubResource( 50 )
+anims/shut_5 = SubResource( 51 )
+anims/shut_6 = SubResource( 52 )
+anims/shut_7 = SubResource( 53 )
+anims/shut_8 = SubResource( 54 )
+script = ExtResource( 17 )
+
+[node name="shut_go3" type="AnimationPlayer" parent="episod1"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 55 )
+anims/shut_1 = SubResource( 56 )
+anims/shut_2 = SubResource( 57 )
+anims/shut_3 = SubResource( 58 )
+anims/shut_4 = SubResource( 59 )
+anims/shut_5 = SubResource( 60 )
+anims/shut_6 = SubResource( 61 )
+anims/shut_7 = SubResource( 62 )
+anims/shut_8 = SubResource( 63 )
+script = ExtResource( 17 )
+
+[node name="shut_go4" type="AnimationPlayer" parent="episod1"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 64 )
+anims/shut_1 = SubResource( 65 )
+anims/shut_2 = SubResource( 66 )
+anims/shut_3 = SubResource( 67 )
+anims/shut_4 = SubResource( 68 )
+anims/shut_5 = SubResource( 69 )
+anims/shut_6 = SubResource( 70 )
+anims/shut_7 = SubResource( 71 )
+anims/shut_8 = SubResource( 72 )
+script = ExtResource( 17 )
+
+[node name="smeh" type="AudioStreamPlayer" parent="episod1"]
+unique_name_in_owner = true
+stream = ExtResource( 6 )
+
+[connection signal="pressed" from="episod1/workstate/menu/pesnya" to="episod1" method="_on_pesnya_pressed"]
+[connection signal="pressed" from="episod1/workstate/menu/skazka" to="episod1" method="_on_skazka_pressed"]
+[connection signal="pressed" from="episod1/workstate/menu/hronika" to="episod1" method="_on_hronika_pressed"]
+[connection signal="animation_finished" from="episod1/workstate/menu/scene_skazka" to="." method="_on_scene_skazka_animation_finished"]
+[connection signal="animation_finished" from="episod1/workstate/menu/scene_pesnya" to="." method="_on_scene_pesnya_animation_finished"]
+[connection signal="animation_finished" from="episod1/workstate/menu/scene_hronika" to="." method="_on_scene_hronika_animation_finished"]
+[connection signal="pressed" from="episod1/workstate/menu/zamok_pesnya" to="episod1/workstate/menu/zamok_pesnya" method="_on_zamok_pesnya_pressed"]
+[connection signal="pressed" from="episod1/workstate/menu/zamok_hronika" to="episod1/workstate/menu/zamok_hronika" method="_on_zamok_hronika_pressed"]
+[connection signal="pressed" from="episod1/workstate/menu_panel/zvuk" to="episod1" method="_on_zvuk_pressed"]
+[connection signal="pressed" from="episod1/workstate/menu_panel/shut" to="episod1" method="_on_shut_pressed"]
+[connection signal="pressed" from="episod1/workstate/popup_blok2/add_coin_sho2" to="episod1" method="_on_add_coin_sho2_pressed"]
+[connection signal="pressed" from="episod1/workstate/shut_icon" to="." method="_on_shut_icon_pressed"]
+[connection signal="pressed" from="episod1/workstate/shut_icon2" to="." method="_on_shut_icon2_pressed"]
+[connection signal="pressed" from="episod1/workstate/shut_icon3" to="." method="_on_shut_icon3_pressed"]
+[connection signal="pressed" from="episod1/workstate/shut_icon4" to="." method="_on_shut_icon4_pressed"]
